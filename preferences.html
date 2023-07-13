@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html style="margin-left: 40px; margin-right: 40px;">
+<!--file:///C:/Users/BeanZ/Desktop/%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E/source/jeff/jeff%20v2_preferences.html-->
+<link rel="stylesheet" href="themes/light.css">
+<link rel="stylesheet" id="themeStylesheetLink" href="themes/default.css">
+<head><title>/ Preferences</title></head>
+<style>
+    hr.xd {
+            border:1px solid var(--primary-tag-color);
+            border-bottom-width: 0px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            box-shadow: 1px 1px 12px var(--primary-tag-color);
+        }
+
+    small {
+        color: rgb(69, 238, 69);
+    }
+
+    /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container:hover {
+    transition: 400ms;
+    text-decoration: underline var(--primary-tag-color) 1px;
+    text-underline-offset: 5px;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: var(--primary-tag-color);
+  box-shadow: var(--primary-tag-color) 0px 0px 12px;
+  transition: 140ms;
+  
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--primary-tag-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container .checkmark:after {
+  left: 0px;
+  top: 0px;
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--primary-tag-color);
+  box-shadow:var(--primary-tag-color) 0px 0px 5px;
+  border-radius: 20px;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+body {
+	display: block;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  font-family: monospace;
+  font-size: 14px;
+  user-select: none;
+}
+
+.save {
+  color: black;
+  border: 1px black;
+  border-radius: 5px;
+  background-color: var(--primary-tag-color);
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 3px;
+  box-shadow:var(--primary-tag-color) 0px 0px 7px;
+  padding-bottom: 3px;
+  margin-top: 160px;
+  margin-left: 147px;
+  cursor: pointer;
+}
+
+.save:hover {
+  transition: 250ms;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: underline black 1px;
+}
+
+.back {
+  text-decoration:none;
+  color: var(--primary-tag-color);
+  font-size: 20px;
+  margin-left: -15px;
+}
+
+.back:hover {
+  background-color: var(--primary-tag-color);
+  color: #0a0a0a;
+  transition: 300ms;
+}
+
+.tag {
+  color: var(--primary-tag-color);
+}
+
+.main {
+  height: 25px;
+  width: 115px;
+  background-color: var(--primary-tag-color);
+  border: none;
+  color: #0a0a0a;
+  padding: 1px 1px;
+  font-size: 15px;
+  margin-left: 995px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+
+<body text="ffffff">
+<!--https://codepen.io/antonandoff/pen/PmQvBz    ====================================  ***IMP***-->
+<select class="main" id="themeSelect">
+  <option value="default">Default (Dark)</option>
+  <option value="dark-orange">Dark • Orange</option>
+  <option value="light-orange">Light • Orange</option>
+  <option value="light">Light</option>
+  <option value="dark-purple">Dark • Purple</option>
+</select>
+<!--#f37521-->
+<!--• ◘ ○ ◙ • ‣ ⁃ ◘ ◦ ⦾ ⦿ ¤ · « » ➼ ➡ ⁌ ⁍ ⁄ https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols-->
+<h2 class="tag" style="font-family:monospace; margin-bottom: 4px;margin-left:100px;font-size: 22px;"><a style="font-family: cosmos;">/</a> Preferences</h2>
+<hr style="margin-left:100px; margin-right:100px;" class="xd">
+<a class="back" href="file:///C:/Users/BeanZ/Desktop/%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E/source/jeff/index.html">/back</a>
+    <div style="margin-top: 20px; margin-left: 100px; margin-right: 0px; margin-bottom: 0px;">
+    <h2 class="tag" style="font-size: 16px;height: 15px;"><a style="font-family: cosmos;">//</a> Theme</h2>
+    <br>
+    <div style="width: 88px;height: 50px;padding-left: 60px;">
+        <label class="container">/ Light<input type="radio" name="radio"><span class="checkmark"></span></label>
+    <br>
+    <label class="container">/ Dark<input type="radio" name="radio"><span class="checkmark"></span></label>
+    </div></div>
+    <br>
+    <div style="margin-top: 20px; margin-left: 45px; margin-right: 0px; margin-bottom: 0px;">
+        <h2 class="tag" style="font-size: 15px;height: 35px;margin-left:54px;"><a style="font-family: cosmos; font-size: 15px;">//</a> General</h2>
+        <div style="width: 900px;height: 100px;padding-left: 100px;">
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>&nbsp; / Enable fixed-width layout</label>
+          <br><br>
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>&nbsp; / Enable justified layout and automatic hyphenation</label>
+          <br><br>
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>
+            <input type="checkbox">&nbsp; / Automatically hide and show the sidebar
+              <small class="tag" style="font-family: arial;">&nbsp;//&nbsp; Tip: drag the edge of the sidebar to resize it.</small>
+          </label>
+          <br><br>
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>
+            <input type="checkbox">&nbsp; / Automatically download documentation for offline use
+              <small class="tag" style="font-family: arial;">&nbsp;//&nbsp; Only enable this when bandwidth isn't a concern to you.</small>
+          </label>
+          <br><br>
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>
+            <input type="checkbox">&nbsp; / Enable tracking cookies
+              <small class="tag" style="font-family: arial;">&nbsp;//&nbsp; With this checked, we enable Google Analytics and Gauges to collect anonymous traffic information.</small>
+              <br>
+          </label>
+        </div>
+      </div>
+      <br>
+          <div class="inner-cursor"></div>
+          <div class="outer-cursor"></div>
+          <label class="save_1"><button id="button" value="save" class="save"><span><span>Save</span></span></button></label>
+          <section id="rightbox" style="color: red;">Not saved</section>
+<script>
+let innerCursor = document.querySelector('.inner-cursor');
+let outerCursor = document.querySelector('.outer-cursor');
+
+document.addEventListener('mousemove', moveCursor);
+
+function moveCursor(e){
+  let x = e.clientX;
+  let y = e.clientY;
+  innerCursor.style.left = `${x}px`;
+  innerCursor.style.top = `${y}px`;
+  outerCursor.style.left = `${x}px`;
+  outerCursor.style.top = `${y}px`;
+}
+
+let links = Array.from(document.querySelectorAll("label"));
+console.log(links);
+
+links.forEach(link =>{
+  link.addEventListener("mouseover", ()=>{
+    innerCursor.classList.add("grow");
+  });
+  link.addEventListener("mouseleave", ()=>{
+    innerCursor.classList.remove("grow");
+  });
+});
+
+</script>
+<script>
+  function initThemeSelector() {
+      const themeSelect = document.getElementById("themeSelect");
+      const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+      const currentTheme = localStorage.getItem("theme") || "default";
+
+      function activateTheme(themeName) {
+        themeStylesheetLink.setAttribute("href", `themes/${themeName}.css`);
+      }
+
+      themeSelect.addEventListener("change", () => {
+          activateTheme(themeSelect.value);
+          localStorage.setItem("theme", themeSelect.value);
+      });
+
+      activateTheme(currentTheme);
+  }
+
+  initThemeSelector();
+</script>
+<script>
+  function doFirst(){
+    var button = document.getElementById("button");
+    button.addEventListener("click", saveCrap, false);
+  }
+  function saveCrap(){
+    var one = document.getElementById("one").value;  
+    var two = document.getElementById("two").value;
+    sessionStorage.setItem(one, two);
+
+    display(one);
+  }
+  function display(){
+    var rightbox = document.getElementById("rightbox");
+    var two = sessionStorage.getItem(one);
+  }
+  window.addEventListener("load", doFirst, false);
+</script>
+</body>
+</html>
