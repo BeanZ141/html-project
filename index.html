@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>some shitty website xd</title>
@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
-        <!--file:///C:/Users/BeanZ/Desktop/%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E/source/jeff/jeff%20v2.html-->
+        <!--file:///C:/Users/BeanZ/Desktop/%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E/source/jeff/index.html-->
         <!--https://www.w3schools.com/html/html_entities.asp-->
         <!--https://devdocs.io/-->
         <link rel="stylesheet" href="themes/light.css">
@@ -209,10 +209,12 @@
 
         .url {
             color: var(--primary-tag-color);
+            text-decoration: none;
         }
 
         .url :hover {
             color: var(--primary-tag-hover-color);
+            text-decoration: underline 2px;
         }
 
         .path2 {
@@ -286,17 +288,19 @@
 
     .tooltip {
         position: relative;
-        display: inline-block;
     }
 
     .tooltip_css {
         position: relative;
-        display: inline-block;
+    }
+
+    .tooltip_python {
+        position: relative;
     }
 
     .tooltip .tooltiptext {
       visibility: hidden;
-      width: 120px;
+      width: 220px;
       color: #fff;
       text-align: center;
       border-radius: 6px;
@@ -306,7 +310,7 @@
       position: absolute;
       z-index: 1;
       top: -2px;
-      left: 105%;
+      left: 55%;
       background-color: #0a0a0a;
       box-shadow: var(--primary-tag-color) 2px 2px 10px;
 
@@ -314,7 +318,7 @@
 
     .tooltip_css .tooltiptext_1 {
       visibility: hidden;
-      width: 120px;
+      width: 170px;
       color: #fff;
       text-align: center;
       border-radius: 6px;
@@ -323,8 +327,26 @@
       /* Position the tooltip */
       position: absolute;
       z-index: 1;
-      top: -2px;
-      left: 62%;
+      top: -1px;
+      left: 60%;
+      background-color: #0a0a0a;
+      box-shadow: var(--primary-tag-color) 2px 2px 10px;
+
+    }
+
+    .tooltip_python .tooltiptext_2 {
+      visibility: hidden;
+      width: 160px;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 7px 4px;
+    
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      top: -1px;
+      left: 55%;
       background-color: #0a0a0a;
       box-shadow: var(--primary-tag-color) 2px 2px 10px;
 
@@ -335,6 +357,10 @@
     }
 
     .tooltip_css:hover .tooltiptext_1 {
+      visibility: visible;
+    }
+    
+    .tooltip_python:hover .tooltiptext_2 {
       visibility: visible;
     }
 
@@ -461,7 +487,7 @@
   background-color: var(--primary-tag-color);
   color: #0a0a0a;
   margin-left: 785px;
-  width: 83px;
+  width: 79px;
   text-align: left;
 }
 
@@ -526,8 +552,42 @@
   height: 30px;
 }
 
+:phover {
+  text-decoration: none;
+}
+
+.phover:hover {
+  text-decoration: underline 2px var(--primary-tag-color);
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  margin-top: 683px;
+  margin-left: -196px;
+  background: rgba(10, 10, 10, 0);
+  position: fixed;
+}
+
+.progress-bar {
+  height: 5px;
+  background: var(--primary-tag-color);
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
 </style>
     <body style="margin-left: 15%; margin-right: 15%; line-height: 1.5;user-select: none;">
+      <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>
     <!--<nobr class="vl" style="margin-left: 28px; margin-right: 27px;width: 4px; background-color: #1a9b09;"></nobr>
     <!--https://freefrontend.com/css-buttons/-->
     <!--https://tympanus.net/codrops/2021/02/17/ideas-for-css-button-hover-animations/-->
@@ -536,11 +596,11 @@
           <button style="padding-right:5px; padding-top:5px; font-size:14px;margin-top: 4px;margin-left: 2px;background-color:var(--primary-tag-color); color:black; padding:1px 8px; font-size:15px; border:none; border-radius: 5px; box-shadow: 0px 0px 10px var(--primary-tag-color); cursor: pointer;">≡</button><br><br>
           <div class="dropdown-content">
             <a class="nound" href="file:///C:/Users/BeanZ/Desktop/%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E%E2%80%8E/source/jeff/preferences.html">Preferences</a>
-            <a class="nound" href="https://devdocs.io/about">About</a>
-            <a class="nound" href="https://devdocs.io/">Inspired by</a>
-            <a class="nound" href="https://www.youtube.com">Youtube</a>
-            <a class="nound" href="https://www.youtube.com/watch?v=Qy9EqNPtB6w&list=PPSV">69</a>
-            <a class="nound" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Do Not Click</a>
+            <a class="nound" href="https://devdocs.io/about" target="_blank">About</a>
+            <a class="nound" href="https://devdocs.io/" target="_blank">Inspired by</a>
+            <a class="nound" href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a class="nound" href="https://www.youtube.com/watch?v=Qy9EqNPtB6w&list=PPSV" target="_blank">69</a>
+            <a class="nound" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Do Not Click</a>
           </div>
         </div>
     </div>
@@ -552,13 +612,15 @@
           <option value="light">Light</option>
           <option value="light-orange">Light ~ Orange</option>
           <option value="dark-purple">Dark ~ Purple</option>
+          <option value="dark-blue">Dark ~ Blue</option>
+          <option value="light-blue">Light ~ Blue</option>
         </select>
         <nobr class="vl" style="margin-left: 0px;margin-right: 1px;width: 1px;"></nobr>
     <!--nobr: LINE  ***-->
     <hr class="xd">
     <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;font-size: 24px;">↑</button>
     <!-- ↑ ⬆ ⬆️ ︽-->
-    <div class="tooltip"><h2 style="margin-bottom: 0px;height: 30px;margin-top: 1.92;margin-top: 0px;margin-left: 400px; cursor: default; text-decoration: underline 1px;">HTML : 5</h2><span class="tooltiptext">HyperText Markup Language</span>
+    <div class="tooltip"><h2 style="margin-bottom: 0px;height: 30px;margin-top: 1.92;margin-top: 0px;margin-left: 400px; cursor: default; text-decoration: underline 6px; color:var(--primary-tag-color);">HTML : 5</h2><a href="https://www.investopedia.com/terms/h/html.asp" target="_blank"><span style="color: var(--primary-tag-color); text-decoration: underline;" class="tooltiptext">HyperText Markup Language</span></a>
     </div>
     <div class="jump">
         <a class="btn" style="text-decoration: none;" href="#css2"><span class="btn-text">CSS</span></a>
@@ -581,53 +643,53 @@
 
     <p style="font-size: 14px">HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
          HTML markup includes special "elements" such as
-    <a class="url" href="https://devdocs.io/html/element/head">
+    <a class="url" href="https://devdocs.io/html/element/head" target="_blank">
         <code class="tag">&lt;head&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/title">
+    <a class="url" href="https://devdocs.io/html/element/title" target="_blank">
         <code class="tag"> &lt;title&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/body">
+    <a class="url" href="https://devdocs.io/html/element/body" target="_blank">
         <code class="tag"> &lt;body&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/header">
+    <a class="url" href="https://devdocs.io/html/element/header" target="_blank">
         <code class="tag"> &lt;header&gt;</code>
-    <a class="url" href="https://devdocs.io/html/element/footer">
+    <a class="url" href="https://devdocs.io/html/element/footer" target="_blank">
         <code class="tag"> &lt;footer&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/article">
+    <a class="url" href="https://devdocs.io/html/element/article" target="_blank">
         <code class="tag"> &lt;article&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/section">
+    <a class="url" href="https://devdocs.io/html/element/section" target="_blank">
         <code class="tag"> &lt;section&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/p">
+    <a class="url" href="https://devdocs.io/html/element/p" target="_blank">
         <code class="tag"> &lt;p&gt;</code>
-    <a class="url" href="https://devdocs.io/html/element/div">
+    <a class="url" href="https://devdocs.io/html/element/div" target="_blank">
         <code class="tag"> &lt;div&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/span">
+    <a class="url" href="https://devdocs.io/html/element/span" target="_blank">
         <code class="tag"> &lt;span&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/img">
+    <a class="url" href="https://devdocs.io/html/element/img" target="_blank">
         <code class="tag"> &lt;img&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/aside">
+    <a class="url" href="https://devdocs.io/html/element/aside" target="_blank">
         <code class="tag"> &lt;aside&gt;</code>
-    <a class="url" href="https://devdocs.io/html/element/audio">
+    <a class="url" href="https://devdocs.io/html/element/audio" target="_blank">
         <code class="tag"> &lt;audio&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/canvas">
+    <a class="url" href="https://devdocs.io/html/element/canvas" target="_blank">
         <code class="tag"> &lt;canvas&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/datalist">
+    <a class="url" href="https://devdocs.io/html/element/datalist" target="_blank">
         <code class="tag"> &lt;datalist&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/details">
+    <a class="url" href="https://devdocs.io/html/element/details" target="_blank">
         <code class="tag"> &lt;details&gt;</code>
-    <a class="url" href="https://devdocs.io/html/element/embed">
+    <a class="url" href="https://devdocs.io/html/element/embed" target="_blank">
         <code class="tag"> &lt;embed&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/nav">
+    <a class="url" href="https://devdocs.io/html/element/nav" target="_blank">
         <code class="tag"> &lt;nav&gt;</code>
-    <a class="url" href="https://devdocs.io/html/element/outupt">
+    <a class="url" href="https://devdocs.io/html/element/outupt" target="_blank">
         <code class="tag"> &lt;outupt&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/progress">
+    <a class="url" href="https://devdocs.io/html/element/progress" target="_blank">
         <code class="tag"> &lt;progress&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/video">
+    <a class="url" href="https://devdocs.io/html/element/video" target="_blank">
         <code class="tag"> &lt;video&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/ul">
+    <a class="url" href="https://devdocs.io/html/element/ul" target="_blank">
         <code class="tag"> &lt;ul&gt;</code>
-    <a class="url" href="https://devdocs.io/html/element/ol">
+    <a class="url" href="https://devdocs.io/html/element/ol" target="_blank">
         <code class="tag"> &lt;ol&gt;</code>,
-    <a class="url" href="https://devdocs.io/html/element/li">
+    <a class="url" href="https://devdocs.io/html/element/li" target="_blank">
         <code class="tag"> &lt;li&gt;.</code></p></a>
     <p style="font-size: 14px">An HTML element is set off from other text in a document by "tags",
        which consist of the element name surrounded by "<" and ">".
@@ -678,15 +740,15 @@
     <p style="font-size: 15px;"><strong><a style="color: white;" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto">Use HTML to solve common problems</a></strong></p>
     <p style="font-size: 14px;">Provides links to sections of content explaining how to use HTML to solve very common problems when creating a web page: dealing with titles, adding images or videos, emphasizing content, creating a basic form, etc.</p>
     <br>
-    <div class="tooltip_css"><h2 style="margin-bottom: 0px;height: 30px;margin-top: 1.92;margin-top: 0px;margin-left: 370px;">CSS Reference</h2>
+    <div class="tooltip_css"><h2 style="margin-bottom: 0px;height: 30px;margin-top: 1.92;margin-top: 0px;margin-left: 370px; color:var(--primary-tag-color);text-decoration: underline 6px var(--primary-tag-color);">CSS REFERENCE</h2><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank"><span style="color: var(--primary-tag-color); text-decoration: underline;" class="tooltiptext_1">Cascading Style Sheet</span></a></div>
     <div class="jump">
-        <a class="btn" style="text-decoration: none;" href="#css2"><span class="btn-text">HTML</span></a>
+        <a class="btn" style="text-decoration: none;" id="css2"><span class="btn-text">HTML</span></a>
     </div>
     <div class="jump">
-      <a class="btn" style="text-decoration: none;" href="#css2"><span class="btn-text">CSS</span></a>
+      <a class="btn" style="text-decoration: none;" id="css2"><span class="btn-text">CSS</span></a>
     </div>
     <div class="jump">
-      <a class="btn" style="text-decoration: none;" href="#css2"><span class="btn-text">Python</span></a>
+      <a class="btn" style="text-decoration: none;" href="#css2"><span class="btn-text">PYTHON</span></a>
     </div>
     <hr class="xd2">
     <p style="font-size: 14px;">Use this CSS reference to browse an <a style="color: var(--primary-tag-color); background-color: rgb(20, 20, 20); border-radius: 4px;" href="https://devdocs.io/css/#index">alphabetical index</a> of all of the standard 
@@ -731,7 +793,7 @@
 
 <p style="font-size: 14px;">As the structure of at-rules varies widely, please see At-rule to find the syntax of the specific one you want.</p>
 <br>
-<div class="tooltip_css"><h2 style="margin-bottom: 0px;height: 30px;margin-top: 1.92;margin-top: 0px;margin-left: 400px;">Python</h2><span class="tooltiptext_1">Cascading Style Sheet</span>
+<div class="tooltip_python"><h2 style="margin-bottom: 0px;height: 30px;margin-top: 1.92;margin-top: 0px;margin-left: 395px; color:var(--primary-tag-color);text-decoration: underline 6px var(--primary-tag-color);">PYTHON</h2><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><span style="color: var(--primary-tag-color); text-decoration: underline;" class="tooltiptext_2">Programming Language</span></a></div>
   <div class="jump">
     <a class="btn" style="text-decoration: none;" href="#css2"><span class="btn-text">HTML</span></a>
 </div>
@@ -750,28 +812,28 @@
     <div class="colorstyle">
     <table>
     <tr><td style="width:500px;padding-left:15%;padding-bottom: 23px;"><nobr class="vl_1"></nobr>
-        <p><a href="https://devdocs.io/python~3.10/tutorial/index" style="color: var(--primary-tag-color)">Tutorial</a><br> <span style="font-size: 14px;"">start here</span></p>
-        <p><a href="https://devdocs.io/python~3.10/library/index" style="color: var(--primary-tag-color)">Library Reference</a><br> <span style="font-size: 14px;"">keep this under your pillow</span></p>
-        <p><a href="https://devdocs.io/python~3.10/reference/index" style="color: var(--primary-tag-color)">Language Reference</a><br> <span style="font-size: 14px;">describes syntax and language elements</span></p>
-        <p><a href="https://devdocs.io/python~3.10/using/index" style="color: var(--primary-tag-color)">Python Setup and Usage</a><br> <span style="font-size: 14px;">how to use Python on different platforms</span></p>
-        <p><a href="https://devdocs.io/python~3.10/howto/index" style="color: var(--primary-tag-color)">Python HOWTOs</a><br> <span style="font-size: 14px;">in-depth documents on specific topics</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/tutorial/index" style="color: var(--primary-tag-color)">Tutorial</a><br> <span style="font-size: 14px;"">start here</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/library/index" style="color: var(--primary-tag-color)">Library Reference</a><br> <span style="font-size: 14px;"">keep this under your pillow</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/reference/index" style="color: var(--primary-tag-color)">Language Reference</a><br> <span style="font-size: 14px;">describes syntax and language elements</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/using/index" style="color: var(--primary-tag-color)">Python Setup and Usage</a><br> <span style="font-size: 14px;">how to use Python on different platforms</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/howto/index" style="color: var(--primary-tag-color)">Python HOWTOs</a><br> <span style="font-size: 14px;">in-depth documents on specific topics</span></p>
         </td>
         <td>
-        <p><a href="https://devdocs.io/python~3.10/installing/index" style="color: var(--primary-tag-color)">Installing Python Modules</a><br> <span style="font-size: 14px;">installing from the Python Package Index &amp; other sources</span></p>
-        <p><a href="https://devdocs.io/python~3.10/distributing/index" style="color: var(--primary-tag-color)">Distributing Python Modules</a><br> <span style="font-size: 14px;">publishing modules for installation by others</span></p>
-        <p><a href="https://devdocs.io/python~3.10/extending/index" style="color: var(--primary-tag-color)">Extending and Embedding</a><br> <span style="font-size: 14px;">tutorial for C/C++ programmers</span></p>
-        <p><a href="https://docs.python.org/3.10/c-api/index.html" style="color: var(--primary-tag-color)">Python/C API</a><br> <span style="font-size: 14px;">reference for C/C++ programmers</span></p>
-        <p><a href="https://devdocs.io/python~3.10/faq/index" style="color: var(--primary-tag-color)">FAQs</a><br><span style="font-size: 14px;">frequently asked questions (with answers!)</span></p></td>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/installing/index" style="color: var(--primary-tag-color)">Installing Python Modules</a><br> <span style="font-size: 14px;">installing from the Python Package Index &amp; other sources</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/distributing/index" style="color: var(--primary-tag-color)">Distributing Python Modules</a><br> <span style="font-size: 14px;">publishing modules for installation by others</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/extending/index" style="color: var(--primary-tag-color)">Extending and Embedding</a><br> <span style="font-size: 14px;">tutorial for C/C++ programmers</span></p>
+        <p><a class="phover" href="https://docs.python.org/3.10/c-api/index.html" style="color: var(--primary-tag-color)">Python/C API</a><br> <span style="font-size: 14px;">reference for C/C++ programmers</span></p>
+        <p><a class="phover" href="https://devdocs.io/python~3.10/faq/index" style="color: var(--primary-tag-color)">FAQs</a><br><span style="font-size: 14px;">frequently asked questions (with answers!)</span></p></td>
     </tr>
     </tbody>
 </table>
 </div>
     <h2 class="h2middle">© 2069-2420 Python Software Foundation Licensed under ma balls xd.
-    <br><a style="color: var(--primary-tag-color);" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">lol watch dis xd</a></h2>
+    <br><a style="color: var(--primary-tag-color);" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">watch dis xd</a></h2>
 
     
 
-<script>
+<script>                                                                        // Dropdown Menu
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -816,35 +878,6 @@ function topFunction() {
         var element = document.body, a;
         element.classList.toggle("dark-mode");
     }    
-</script>
-
-<script>
-let innerCursor = document.querySelector('.inner-cursor');
-let outerCursor = document.querySelector('.outer-cursor');
-
-document.addEventListener('mousemove', moveCursor);
-
-function moveCursor(e){
-  let x = e.clientX;
-  let y = e.clientY;
-  innerCursor.style.left = `${x}px`;
-  innerCursor.style.top = `${y}px`;
-  outerCursor.style.left = `${x}px`;
-  outerCursor.style.top = `${y}px`;
-}
-
-let links = Array.from(document.querySelectorAll("label, a"));
-console.log(links);
-
-links.forEach(link =>{
-  link.addEventListener("mouseover", ()=>{
-    innerCursor.classList.add("grow");
-  });
-  link.addEventListener("mouseleave", ()=>{
-    innerCursor.classList.remove("grow");
-  });
-});
-
 </script>
 <script>
   function initThemeSelector() {
@@ -943,8 +976,19 @@ function closeAllSelect(elmnt) {
   }
 }
 /*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
+then close all select boxes*/
 document.addEventListener("click", closeAllSelect);
+</script>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 </script>
 </body>
 </html>
